@@ -1,0 +1,13 @@
+.mainContainer {
+    
+    margin: 0px;
+    flex: 1;
+    background-image: url("../../assets/fondo-plano-formas-geometricas-verdes_23-2148379397.avif");
+    
+}
+
+@media screen and (max-width: 767px) {
+.mainContainer {
+    margin-top: 100px;
+    }
+}

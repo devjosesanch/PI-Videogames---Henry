@@ -1,0 +1,48 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.arrows {
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.button, .pageButtonSmallDevice {   
+    margin: 6px;
+    padding: 10px;
+    background-color: rgb(50, 39, 161);;
+    color: rgb(247, 242, 242);
+    height: 100%;
+    border: 1px solid rgb(245, 239, 239);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button:hover {
+    color: rgb(229, 191, 36);
+}
+
+.isActive {
+    background-color:rgba(216, 232, 249, 0.716);
+    color: rgb(12, 11, 1);
+}
+
+.pageButtonSmallDevice {
+    display: none;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .pageButtonLargeDevice {
+    display: none;
+    }
+    .pageButtonSmallDevice {
+    display: flex;
+    }
+}

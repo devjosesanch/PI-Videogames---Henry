@@ -1,0 +1,158 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-image: url("../../assets/backCreate.jpeg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    margin-top: 2%;
+  }
+  
+  .nameAndReleasedAndRatingContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .label {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    color: #c3f73a;
+    font-size: 18px;
+    background-color: rgba(4, 40, 55, 0.634);
+  }
+  
+  .input {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    border-radius:10px;
+    border: solid #5e2bff 1px;
+    margin-top: 20px;
+  }
+  
+  .nameInput {
+    width: 80%;
+  }
+  
+  .dateInput {
+    width: fit-content;
+  }
+  
+  .ratingInput {
+    width: 100px;
+  }
+  
+  .checkboxContainer {
+    background-color: var(--mygrey3opaque);
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+    border-radius:10px;
+    border: solid #5e2bff 1px;
+  }
+  
+  .checkboxSubcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 8px;
+  }
+  
+  .genreLabel {
+    align-items: center;
+    margin: 9px;
+  }
+  
+  .genreInput {
+    margin: 9px;
+  }
+  
+  .errorMessage {
+    color: yellow;
+    font-weight: bold;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(4, 40, 55, 0.634);
+  }
+  
+  .submitButton {
+    background-color: rgba(4, 40, 55, 0.634);
+    color: rgb(221, 218, 27);
+    position: center;
+    font-weight: bold;
+    height: 60px;
+    width: 50%;
+    border: solid #5e2bff 4px;
+    font-size: 35px;
+    margin: 30px;
+  }
+  
+  .submitButton:hover {
+    background-color: rgb(31, 88, 149);
+    color:rgb(221, 218, 27);
+    font-size: 35px;
+    height: 60px;
+    width: 50%;
+  }
+  
+  .resetButton {
+    background-color: rgba(4, 40, 55, 0.634);
+    color: rgb(233, 16, 16);
+    font-weight: bold;
+    height: 60px;
+    width: 55%;
+    border: solid #5e2bff 4px;
+    font-size: 35px;
+    margin: 30px;
+  }
+  
+  .resetButton:hover {
+    background-color: rgb(31, 88, 149);
+    color: rgb(233, 16, 16);
+    font-size: 35px;
+    height: 60px;
+    width: 55%;
+  }
+  
+  
+  /* MEDIA QUERIES */
+  @media screen and (max-width: 1279px) {
+    .mainContainer {
+      flex-direction: column;
+    }
+    .formContainer {
+      width: 100%;
+    }
+    .nameAndReleasedAndRatingContainer {
+      flex-direction: column;
+    }
+    .preview {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .nameAndReleasedAndRatingContainer {
+      margin-top: 100px;
+    }
+  }

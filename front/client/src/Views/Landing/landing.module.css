@@ -1,0 +1,62 @@
+.mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../assets/fondo-videojuego-dibujado-mano_23-2150315377.avif");
+    background-position: center;
+    background-size: 95%;
+}
+
+.welcomeCont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 120px;
+    margin-top: 170px;
+    font-size: 50px;
+}
+.welcome{
+    margin : 0px;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.textN{
+    color: aliceblue;
+    font-size: 24px;
+    margin-left: 90px;
+}
+.name{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    color: #5e2bff;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 40px;
+    font-size: 70px;
+}
+
+.boton{
+    color: #131401;
+    font-weight: bolder;
+    font-size:30px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 90px;
+    margin-left: 120px;
+    width: 210px;
+    height: 80px;
+    border-radius: 10%;
+    background-color: #c3f73a;
+    animation: pulse 2s infinite;
+}

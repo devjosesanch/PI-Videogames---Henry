@@ -1,0 +1,24 @@
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    margin: auto;
+    width: fit-content;
+    
+    }
+    
+    .notFoundText {
+    color: var(--myred2);
+    margin-top: 100px;
+    margin-bottom: 400px;
+    }
+    
+    @media screen and (max-width: 1280px) {
+    .mainContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 10px;
+    }
+    }

@@ -1,0 +1,42 @@
+.NavLink {
+    text-decoration: none;
+}
+.cardcontainer{
+    background-color: #5e2bff;
+    border: 1px solid #72b01d;
+    width: 90%;
+    height: 98%;
+    border-radius: 10%;
+    color: #f3eff5;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Open Sans';
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.title {
+    margin: 25px; 
+    font-size: 23px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.image{
+    width: 90%;
+    height: 40%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.rating {
+    font-size: 20px;
+    margin: 10px;
+    background-color: #c3f73a;
+    color: rgb(1, 11, 20);
+}
+
+.genres {
+    font-size: 19px;
+}
