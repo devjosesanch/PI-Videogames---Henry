@@ -16,20 +16,20 @@
 .button, .pageButtonSmallDevice {   
     margin: 6px;
     padding: 10px;
-    background-color: rgb(50, 39, 161);;
-    color: rgb(247, 242, 242);
+    background-color:#5e2bff;
+    color: #c3f73a;
     height: 100%;
-    border: 1px solid rgb(245, 239, 239);
+    border: 1px solid #c3f73a;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .button:hover {
-    color: rgb(229, 191, 36);
+    color: #c3f73a;
 }
 
 .isActive {
-    background-color:rgba(216, 232, 249, 0.716);
+    background-color:#95e06c;
     color: rgb(12, 11, 1);
 }
 

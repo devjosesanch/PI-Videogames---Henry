@@ -5,7 +5,6 @@ const { API_KEY } = process.env;
 
 
 const getVideoGameById = async (id)=>{
-
     const source = id.includes("-") ? 'db' : 'API';//Si el ID contiene un guión, se asume que se trata de un ID de la base de datos local; de lo contrario, se asume que es un ID de la API externa
 
     if(source === "db"){
@@ -16,10 +15,10 @@ const getVideoGameById = async (id)=>{
         through: {attributes:[]}
     }]
     });
-
+console.log(videogameDB);
     if (!videogameDB) throw Error(`Request failed with status code 404. There is no videogame with the id ${id}`);
 
-        const { name, background_image, platforms, released, rating, Genres, description } = videogameDB.dataValues;
+        const { name, background_image, platforms, released, rating, description, Genres } = videogameDB.dataValues;
     
         const vgByIdClean = {
             id, 
@@ -28,8 +27,9 @@ const getVideoGameById = async (id)=>{
             platforms,
             released, 
             rating,
-            genres: Genres.map(genre => genre.name),
-            description
+            description,
+            genres: Genres ? Genres.map(genre => genre.name) : [],
+            
         }
         return vgByIdClean;    
     }; 

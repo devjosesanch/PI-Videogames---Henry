@@ -1,5 +1,6 @@
 import Cards from "../../Components/Cards/Cards.jsx";
 import Filters from "../../Components/Filter/Filter.jsx";
+import Pagination from "../../Components/Pagination/Pagination.jsx"
 import { useEffect} from "react"; 
 import { useDispatch, useSelector} from "react-redux";
 import { getVideoGames, getGenres} from "../../redux/actions.js";
@@ -23,9 +24,11 @@ const Home = () => {
     return (
         <div className={styles.mainContainer}>
             <Filters />
-        
+            <Pagination numberOfPages={numberOfPages} />
+
             <Cards VG_PER_PAGE={VG_PER_PAGE} />
     
+            <Pagination numberOfPages={numberOfPages} />
         </div>
         );
     };

@@ -8,7 +8,7 @@ const postVg = async(name, background_image, platforms, released, rating, descri
         platforms, 
         released, 
         rating, 
-        description
+        description,
     });
     const genresFromDb = await Genre.findAll({
         where: {name: genres}});
